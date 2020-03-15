@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.1)
+
+set(CMAKE_CXX_STANDARD 11)
+
+include_directories(
+  .
+  src
+)
+
+set(ADDRESS_TEST_SRCS
+  src/address.cc
+  test/address_test.cc
+)
+
+add_executable(address_test ${ADDRESS_TEST_SRCS})
